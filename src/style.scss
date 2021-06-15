@@ -1,0 +1,83 @@
+@import "globals/reset";
+@import "globals/vars";
+@import "globals/mixin";
+@import "globals/functions";
+@import "button/button";
+
+body,html
+{
+    font-family: Montserrat;
+}
+
+ul,ol
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.container
+{
+    min-width: 320px;
+    @include marginSidesAuto(); //auto 
+}
+.sub-container
+{
+    // width: auto;
+}
+
+//общие стили без размера
+.section-title
+{
+    font-family: Montserrat; //на всяк случай
+    @include fontCss(26px,700);
+    color: textColor(white);
+}
+
+
+
+// @media(min-width: 481px)
+// {
+//     .container
+//     {
+//         max-width: 768px;
+//     }
+  
+// }
+
+@media(min-width: 993px)
+{
+    // .container
+    // {
+    //     max-width: 1200px;
+    // }
+}
+@media(min-width: 993px)
+{
+    .container
+    {
+        min-width: unset;
+        max-width: unset;
+    }
+    .sub-container
+    {
+        max-width: 1200px;
+        @include marginSidesAuto(); //auto 
+    }
+}
+
+@import "header/header";
+@import "logo/logo";
+@import "menu/menu";
+@import "fork-app/fork-app"; 
+@import "talking-about/talking-about";
+
+
+
+.text-uppercase
+{
+    text-transform: uppercase;
+}

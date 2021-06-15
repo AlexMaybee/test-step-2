@@ -1,0 +1,31 @@
+{
+  "name": "forkio_step_project",
+  "version": "1.0.0",
+  "description": "second step broject by Oleg Bobeika and Aleksandr Mayboroda",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "step",
+    "forkio"
+  ],
+  "author": "Oleg Bobeika and Aleksandr Mayboroda",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-svgmin": "^3.0.0",
+    "gulp-uglify-es": "^2.0.0"
+  },
+  "dependencies": {}
+}
